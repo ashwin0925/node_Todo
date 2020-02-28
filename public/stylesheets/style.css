@@ -1,0 +1,202 @@
+body {
+  font-family: "Alegreya";
+}
+
+/* body {
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.heading {
+  margin-left: 580px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.addTodo {
+  margin-left: 450px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.inputBox {
+  color: #333;
+  width: 280px;
+  height: 38px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transition: box-shadow 320ms;
+
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.1);
+
+  border-radius: 3px;
+  font-size: 18px;
+  border: 0px;
+}
+
+input[type="text"]:focus {
+  outline: 0px;
+  outline-offset: 0px;
+  box-shadow: 0px 0px 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+input:-moz-placeholder {
+  color: #cccccc;
+}
+
+/* Button */
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  /* padding: 11px 30px; */
+  width: 70px;
+  height: 38px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 300%;
+  background: #2cd582;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/* added Todo */
+
+.addedTodo {
+  margin-left: 460px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+}
+
+.todoName {
+  font-size: 20px;
+  padding: 10px;
+}
+.todo_container {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  justify-content: space-between;
+}
+
+.edit_delete {
+  font-size: 17px;
+}
+
+.edit {
+  margin-right: 10px;
+  color: #5cb85c;
+}
+
+/* Update Button */
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn_update {
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  /* padding: 11px 30px; */
+  width: 80px;
+  height: 38px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn_update span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn_update:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 270%;
+  background: #2cd582;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn_update:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}

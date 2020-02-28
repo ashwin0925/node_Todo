@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5f556a3f29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya:400,500i,700,700i,800,800i&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Todo</title>
+  </head>
+
+  <body>
+    <h1 class="heading">Todo</h1>
+    <form action="/" method="POST">
+      <div class="addTodo">
+        <input class="inputBox" type="text" name="name" />
+        <button class="btn"><span>Add!</span></button>
+      </div>
+    </form>
+    <div class="addedTodo">
+      <% todos.forEach(todo => { %>
+      <div class="todo_container">
+        <div class="pretty p-svg p-curve ">
+          <input type="checkbox" name="isCompleted" <%= todo.isCompleted ?
+          "checked" : "" %>>
+          <div class="state p-success">
+            <!-- svg path -->
+            <svg class="svg svg-icon" viewBox="0 0 20 20">
+              <path
+                d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+                style="stroke: white;fill:white;"
+              ></path>
+            </svg>
+            <label></label>
+          </div>
+        </div>
+        <!-- <input type="checkbox" name="isCompleted" <%= todo.isCompleted ? "checked" : "" %>> -->
+        <span class="todoName"><%= todo.name %></span>
+        <div class="edit_delete">
+          <span>
+            <a class="edit" href="<%= todo._id %>/edit"
+              ><i class="far fa-edit"></i
+            ></a>
+          </span>
+          <span>
+            <a href="<%= todo._id %>/delete"><i class="far fa-trash-alt"></i></a
+          ></span>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
