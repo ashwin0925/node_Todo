@@ -200,3 +200,86 @@ a {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+@media all and (max-width: 1024px) {
+  .heading {
+    margin-left: 50%;
+  }
+  .addTodo {
+    margin-left: 35%;
+  }
+  .addedTodo {
+    margin-left: 36%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .heading {
+    margin-left: 40%;
+  }
+  .addTodo {
+    margin-left: 25%;
+  }
+  .addedTodo {
+    margin-left: 25%;
+  }
+}
+
+@media all and (max-width: 589px) {
+  .heading {
+    margin-left: 48%;
+  }
+  .addTodo {
+    margin-left: 30%;
+  }
+  .addedTodo {
+    margin-left: 30%;
+  }
+  .btn {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+  .btn_update {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .heading {
+    margin-left: 42%;
+  }
+  .addTodo {
+    margin-left: 20%;
+  }
+  .addedTodo {
+    margin-left: 20%;
+  }
+  .btn {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+  .btn_update {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+}
+@media all and (max-width: 399px) {
+  .heading {
+    margin-left: 38%;
+  }
+  .addTodo {
+    margin-left: 12%;
+  }
+  .addedTodo {
+    margin-left: 12%;
+  }
+  .btn {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+  .btn_update {
+    margin-top: 20px;
+    margin-left: 110px;
+  }
+}
