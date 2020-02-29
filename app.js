@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 
 //Database
 
-mongoose.connect(process.env.MONGO_URI,
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/todos',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
